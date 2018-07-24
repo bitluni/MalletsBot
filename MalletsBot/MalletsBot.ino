@@ -65,7 +65,7 @@ void loop()
   
   //this loop checks if time out on a note has been reached and releases it 
   for(int i = 0; i < malletCount; i++)
-    if(mallets[i] > 0 && mallets[i] <= t)
+    if(mallets[i] != 0 && mallets[i] <= t)
 	{
       pwm.setPWM(i, 0, 4096);
 	  mallets[i] = 0;
