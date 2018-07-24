@@ -27,7 +27,7 @@ void setup() {
 
 void loop() 
 {
-  int t = millis();
+  long t = millis();
   midiEventPacket_t rx;
   do {
     rx = MidiUSB.read();
